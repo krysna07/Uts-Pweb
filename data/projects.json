@@ -1,0 +1,43 @@
+[
+
+    {
+        "slug": "portfolio-krysna",
+        "title": "Portofolio Krysna",
+        "description": "Portofolio pribadi Krysna yang berisi data diri, hobi, dan sedikit pengalaman belajar web.",
+        "image": "https://via.placeholder.com/600x400/6366f1/ffffff?text=Portofolio+Krysna",
+        "liveUrl": "https://pweb-8scn.vercel.app/",
+        "category": "web",
+        "tujuan": "Untuk memperkenalkan diri dan membangun personal branding secara online.",
+        "masalah": "Belum punya tempat online untuk menampilkan diri, jadi dibuat sendiri meski masih sederhana.",
+        "teknologi": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python"
+        ],
+        "kontribusi": {
+            "Krysna": "Membuat seluruh desain dan konten portofolio pribadi dari awal.",
+            "Dekrisna": "Membantu review kode dan memberikan saran teknis saat ada yang stuck."
+        }
+    },
+    {
+        "slug": "portfolio-dekrisna",
+        "title": "Portofolio Dekrisna",
+        "description": "Portofolio pribadi Dekrisna yang berisi data diri, hobi, dan sedikit pengalaman belajar web.",
+        "image": "https://via.placeholder.com/600x400/6366f1/ffffff?text=Portofolio+Dekrisna",
+        "liveUrl": "https://dekrizz.vercel.app",
+        "category": "web",
+        "tujuan": "Untuk memperkenalkan diri dan membangun personal branding secara online.",
+        "masalah": "Belum punya tempat online untuk menampilkan diri, jadi dibuat sendiri meski masih sederhana.",
+        "teknologi": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python"
+        ],
+        "kontribusi": {
+            "Krysna": "Membuat seluruh desain dan konten portofolio pribadi dari awal.",
+            "Dekrisna": "Membantu review kode dan memberikan saran teknis saat ada yang stuck."
+        }
+    }
+]
