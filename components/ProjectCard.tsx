@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import ProjectPreview from "@/components/ProjectPreview";
 
 interface ProjectCardProps {
   project: {
@@ -8,24 +8,27 @@ interface ProjectCardProps {
     title: string;
     description: string;
     image: string;
-    category: string;
     liveUrl?: string;
+    preview?: {
+      cardScale?: number;
+      cardOffsetY?: number;
+      detailScaleMobile?: number;
+      detailScaleDesktop?: number;
+      detailOffsetY?: number;
+    };
   };
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition duration-300 border border-slate-100 dark:border-slate-800 flex flex-col">
-      <div className="relative h-48 w-full bg-slate-200 dark:bg-slate-800">
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          className="object-cover"
+      <div className="relative">
+        <ProjectPreview
+          title={project.title}
+          image={project.image}
+          liveUrl={project.liveUrl}
+          preview={project.preview}
         />
-        <div className="absolute top-4 right-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-slate-800 dark:text-slate-200 capitalize shadow-sm">
-          {({ environment: "Lingkungan", business: "Bisnis", web: "Web" } as Record<string, string>)[project.category] ?? project.category}
-        </div>
       </div>
       <div className="p-6 flex flex-col flex-1">
         <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{project.title}</h3>

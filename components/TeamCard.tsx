@@ -22,7 +22,9 @@ export default function TeamCard({ name, role, image, description, skills }: Tea
         />
       </div>
 
-      <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{name}</h3>
+      <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2 text-center leading-tight text-balance">
+        {name}
+      </h3>
       <p className="text-blue-600 dark:text-blue-400 font-medium mb-4">{role}</p>
       <p className="text-slate-600 dark:text-slate-400 text-center mb-6 leading-relaxed">
         {description}

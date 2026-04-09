@@ -7,6 +7,13 @@
         "image": "https://via.placeholder.com/600x400/6366f1/ffffff?text=Portofolio+Krysna",
         "liveUrl": "https://pweb-8scn.vercel.app/",
         "category": "web",
+        "preview": {
+            "cardScale": 0.46,
+            "cardOffsetY": -110,
+            "detailScaleMobile": 0.68,
+            "detailScaleDesktop": 0.9,
+            "detailOffsetY": -260
+        },
         "tujuan": "Untuk memperkenalkan diri dan membangun personal branding secara online.",
         "masalah": "Belum punya tempat online untuk menampilkan diri, jadi dibuat sendiri meski masih sederhana.",
         "teknologi": [
@@ -27,6 +34,13 @@
         "image": "https://via.placeholder.com/600x400/6366f1/ffffff?text=Portofolio+Dekrisna",
         "liveUrl": "https://dekrizz.vercel.app",
         "category": "web",
+        "preview": {
+            "cardScale": 0.36,
+            "cardOffsetY": -40,
+            "detailScaleMobile": 0.46,
+            "detailScaleDesktop": 0.66,
+            "detailOffsetY": -90
+        },
         "tujuan": "Untuk memperkenalkan diri dan membangun personal branding secara online.",
         "masalah": "Belum punya tempat online untuk menampilkan diri, jadi dibuat sendiri meski masih sederhana.",
         "teknologi": [

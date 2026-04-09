@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import projectsData from "../../../data/projects.json";
 import { ArrowLeft, Target, CheckCircle2, Code2, Users } from "lucide-react";
+import ProjectPreview from "@/components/ProjectPreview";
 
 export async function generateStaticParams() {
   return projectsData.map((p) => ({
@@ -31,21 +31,15 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
         <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-4">
           {project.title}
         </h1>
-        <div className="flex items-center gap-3 mb-8">
-          <span className="px-4 py-1.5 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 rounded-full text-sm font-bold uppercase tracking-wider">
-            {({ environment: "Lingkungan", business: "Bisnis", web: "Web" } as Record<string, string>)[project.category] ?? project.category}
-          </span>
-        </div>
-        
-        <div className="relative w-full h-[300px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-slate-100 dark:border-slate-800">
-          <Image
-            src={project.image}
-            alt={project.title}
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
+
+        <ProjectPreview
+          title={project.title}
+          image={project.image}
+          liveUrl={project.liveUrl}
+          variant="detail"
+          priority
+          preview={project.preview}
+        />
       </div>
 
       <div className="grid md:grid-cols-3 gap-12">
