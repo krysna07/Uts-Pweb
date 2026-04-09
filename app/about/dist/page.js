@@ -1,0 +1,61 @@
+"use strict";
+exports.__esModule = true;
+exports.metadata = void 0;
+var lucide_react_1 = require("lucide-react");
+exports.metadata = {
+    title: "Tentang Kami | Tim K&D"
+};
+function About() {
+    return (React.createElement("div", { className: "flex flex-col px-4 sm:px-6 lg:px-8 py-16 max-w-5xl mx-auto" },
+        React.createElement("div", { className: "text-center mb-16" },
+            React.createElement("h1", { className: "text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white mb-6" }, "Tentang Tim"),
+            React.createElement("p", { className: "text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto" }, "Kami dua mahasiswa yang lagi belajar bareng membuat website. Masih banyak yang belum kami kuasai, tapi kami percaya proses belajar yang jujur adalah langkah terbaik.")),
+        React.createElement("section", { className: "mb-20" },
+            React.createElement("div", { className: "flex items-center mb-8" },
+                React.createElement(lucide_react_1.Users, { className: "text-blue-500 mr-4", size: 32 }),
+                React.createElement("h2", { className: "text-3xl font-bold text-slate-900 dark:text-white" }, "Anggota Tim & Peran")),
+            React.createElement("div", { className: "grid md:grid-cols-2 gap-8" },
+                React.createElement("div", { className: "bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800" },
+                    React.createElement("h3", { className: "text-2xl font-bold text-slate-900 dark:text-white mb-2" }, "Krysna"),
+                    React.createElement("p", { className: "text-blue-600 dark:text-blue-400 font-medium mb-4" }, "Lead UI/UX & Desain"),
+                    React.createElement("p", { className: "text-slate-600 dark:text-slate-400" }, "Masih dalam tahap belajar mendesain tampilan website yang menarik dan mudah digunakan. Krysna mencoba memahami cara membuat antarmuka yang nyaman dengan bantuan Figma dan Tailwind CSS, meskipun hasilnya masih terus diperbaiki.")),
+                React.createElement("div", { className: "bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800" },
+                    React.createElement("h3", { className: "text-2xl font-bold text-slate-900 dark:text-white mb-2" }, "Dekrisna"),
+                    React.createElement("p", { className: "text-blue-600 dark:text-blue-400 font-medium mb-4" }, "Lead Logika & Pengembangan"),
+                    React.createElement("p", { className: "text-slate-600 dark:text-slate-400" }, "Baru mulai belajar dunia pengembangan web dan masih sering bergulat dengan error. Dekrisna mencoba memahami JavaScript, React, dan Next.js secara bertahap sambil mengerjakan proyek ini sebagai sarana belajar yang nyata.")))),
+        React.createElement("section", { className: "mb-20" },
+            React.createElement("div", { className: "flex items-center mb-8" },
+                React.createElement(lucide_react_1.Workflow, { className: "text-blue-500 mr-4", size: 32 }),
+                React.createElement("h2", { className: "text-3xl font-bold text-slate-900 dark:text-white" }, "Cara Kami Bekerja")),
+            React.createElement("div", { className: "bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-sm border border-slate-100 dark:border-slate-800 relative overflow-hidden" },
+                React.createElement("div", { className: "relative z-10 grid gap-6" },
+                    React.createElement("div", { className: "flex gap-4" },
+                        React.createElement("div", { className: "w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 font-bold shrink-0" }, "1"),
+                        React.createElement("div", null,
+                            React.createElement("h4", { className: "text-xl font-bold text-slate-900 dark:text-white mb-1" }, "Ideasi & Wireframing"),
+                            React.createElement("p", { className: "text-slate-600 dark:text-slate-400" }, "Kami mulai dengan bertanya-tanya \"mau bikin apa?\" dan Krysna mencoba coret-coret sketsa tampilan di kertas atau Figma."))),
+                    React.createElement("div", { className: "flex gap-4" },
+                        React.createElement("div", { className: "w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 font-bold shrink-0" }, "2"),
+                        React.createElement("div", null,
+                            React.createElement("h4", { className: "text-xl font-bold text-slate-900 dark:text-white mb-1" }, "Arsitektur Komponen"),
+                            React.createElement("p", { className: "text-slate-600 dark:text-slate-400" }, "Dekrisna mencoba menyusun struktur kode dan komponen dasar, sambil belajar memahami TypeScript dan Next.js lebih dalam."))),
+                    React.createElement("div", { className: "flex gap-4" },
+                        React.createElement("div", { className: "w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 font-bold shrink-0" }, "3"),
+                        React.createElement("div", null,
+                            React.createElement("h4", { className: "text-xl font-bold text-slate-900 dark:text-white mb-1" }, "Integrasi & Polesan"),
+                            React.createElement("p", { className: "text-slate-600 dark:text-slate-400" }, "Kami gabungkan desain dan kode sambil saling bantu, debug bareng, dan sesekali bertanya ke Google atau AI ketika mentok.")))))),
+        React.createElement("section", null,
+            React.createElement("div", { className: "flex items-center mb-8" },
+                React.createElement(lucide_react_1.Layers, { className: "text-blue-500 mr-4", size: 32 }),
+                React.createElement("h2", { className: "text-3xl font-bold text-slate-900 dark:text-white" }, "Tumpukan Teknologi & Arsitektur")),
+            React.createElement("div", { className: "grid md:grid-cols-2 gap-8" },
+                React.createElement("div", { className: "bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800" },
+                    React.createElement(lucide_react_1.Code2, { className: "text-slate-400 mb-4", size: 28 }),
+                    React.createElement("h3", { className: "text-xl font-bold text-slate-900 dark:text-white mb-3" }, "Mengapa Next.js?"),
+                    React.createElement("p", { className: "text-slate-600 dark:text-slate-400 text-sm leading-relaxed" }, "Next.js dipilih karena direkomendasikan di tutorial yang kami ikuti dan cocok untuk belajar konsep modern web development. Lumayan susah di awal, tapi mulai terbiasa setelah sering coba-coba.")),
+                React.createElement("div", { className: "bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800" },
+                    React.createElement(lucide_react_1.Code2, { className: "text-slate-400 mb-4", size: 28 }),
+                    React.createElement("h3", { className: "text-xl font-bold text-slate-900 dark:text-white mb-3" }, "Konsep App Router"),
+                    React.createElement("p", { className: "text-slate-600 dark:text-slate-400 text-sm leading-relaxed" }, "App Router masih cukup membingungkan buat kami, tapi kami belajar pelan-pelan. Proses belajar ini sendiri yang jadi nilai terbesar dari proyek ini."))))));
+}
+exports["default"] = About;

@@ -52,11 +52,7 @@ export default function About() {
               <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 font-bold shrink-0">1</div>
               <div>
                 <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-1">Ideasi & Wireframing</h4>
-<<<<<<< HEAD
-                <p className="text-slate-600 dark:text-slate-400">Kami mulai dengan bertanya-tanya "mau bikin apa?" dan Krysna mencoba coret-coret sketsa tampilan di kertas atau Figma.</p>
-=======
                 <p className="text-slate-600 dark:text-slate-400">Kami mulai dengan bertanya-tanya &quot;mau bikin apa?&quot; dan Krysna mencoba coret-coret sketsa tampilan di kertas atau Figma.</p>
->>>>>>> c1f5861 (Menyelesaikan fitur UTS Pweb)
               </div>
             </div>
             <div className="flex gap-4">
