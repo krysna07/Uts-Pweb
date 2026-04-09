@@ -1,6 +1,10 @@
 import Link from "next/link";
 import TeamCard from "@/components/TeamCard";
+<<<<<<< HEAD
 import { Layers, Zap, Code } from "lucide-react";
+=======
+import { Layers, Zap } from "lucide-react";
+>>>>>>> c1f5861 (Menyelesaikan fitur UTS Pweb)
 
 export default function Home() {
   return (
@@ -61,16 +65,28 @@ export default function Home() {
 
         <div className="flex flex-col md:flex-row gap-8 max-w-4xl mx-auto">
           <TeamCard
+<<<<<<< HEAD
             name="I Gusti Krysna"
             role="UI/UX & Desain"
             image="https://via.placeholder.com/256x256/3b82f6/ffffff?text=Krysna"
+=======
+            name="I Gusti Krysna DevaNanda"
+            role="UI/UX & Desain"
+            image="/foto krysna.jpeg"
+>>>>>>> c1f5861 (Menyelesaikan fitur UTS Pweb)
             description="Masih belajar merancang tampilan yang nyaman dipakai. Suka ngulik desain dan mencoba membuat sesuatu yang enak dilihat, meskipun masih banyak yang perlu dipelajari."
             skills={["Figma", "Tailwind CSS", "HTML/CSS", "Canva"]}
           />
           <TeamCard
+<<<<<<< HEAD
             name="Gede Dekrisna"
             role="Logika & Pengembangan"
             image="https://via.placeholder.com/256x256/10b981/ffffff?text=Dekrisna"
+=======
+            name="Gede Krisna Citha Dharma Wacika "
+            role="Logika & Pengembangan"
+            image="/foto dekrisna.jpeg"
+>>>>>>> c1f5861 (Menyelesaikan fitur UTS Pweb)
             description="Masih dalam proses memahami logika pemrograman dan cara kerja web. Senang mencoba hal baru meski kadang error-nya lebih banyak dari yang diharapkan."
             skills={["Next.js", "JavaScript", "React", "TypeScript"]}
           />

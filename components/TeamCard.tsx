@@ -12,6 +12,7 @@ export default function TeamCard({ name, role, image, description, skills }: Tea
   return (
     <div className="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-lg hover:shadow-xl hover:-translate-y-1 transition duration-300 border border-slate-100 dark:border-slate-800 flex flex-col items-center flex-1">
       <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-blue-50 dark:border-blue-900">
+      <div className="w-40 h-40 rounded-full overflow-hidden mb-6 border-4 border-blue-50 dark:border-blue-900">
         <Image src={image} alt={name} width={128} height={128} className="object-cover w-full h-full" />
       </div>
       <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{name}</h3>
