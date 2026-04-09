@@ -9,7 +9,7 @@ export default function About() {
     <div className="flex flex-col px-4 sm:px-6 lg:px-8 py-16 max-w-5xl mx-auto">
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white mb-6">
-          Tentang Tim
+          Tentang Kami
         </h1>
         <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
           Kami dua mahasiswa yang lagi belajar bareng membuat website. Masih banyak yang belum kami kuasai, tapi kami percaya proses belajar yang jujur adalah langkah terbaik.
@@ -32,9 +32,9 @@ export default function About() {
           </div>
           <div className="bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">Dekrisna</h3>
-            <p className="text-blue-600 dark:text-blue-400 font-medium mb-4">Lead Logika & Pengembangan</p>
+            <p className="text-blue-600 dark:text-blue-400 font-medium mb-4">Lead Web Design</p>
             <p className="text-slate-600 dark:text-slate-400">
-              Baru mulai belajar dunia pengembangan web dan masih sering bergulat dengan error. Dekrisna mencoba memahami JavaScript, React, dan Next.js secara bertahap sambil mengerjakan proyek ini sebagai sarana belajar yang nyata.
+              Saya adalah seorang pemula di bidang web design yang tertarik membuat tampilan website yang menarik, rapi, dan user-friendly. Untuk meningkatkan kemampuan, saya aktif mengerjakan berbagai project, terutama di bagian frontend dan desain layout.
             </p>
           </div>
         </div>
