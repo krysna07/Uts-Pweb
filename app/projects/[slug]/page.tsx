@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import projectsData from "../../../data/projects.json";
+import projectsData from "@/data/projects.json";
 import { ArrowLeft, Target, CheckCircle2, Code2, Users } from "lucide-react";
 import ProjectPreview from "@/components/ProjectPreview";
 
