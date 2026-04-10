@@ -70,10 +70,10 @@ export default function Home() {
           />
           <TeamCard
             name="Gede Krisna Chita Dharma Wacika"
-            role="Logika & Pengembangan"
+            role="Web Design"
             image="/foto%20dekrisna.jpeg"
-            description="Masih dalam proses memahami logika pemrograman dan cara kerja web. Senang mencoba hal baru meski kadang error-nya lebih banyak dari yang diharapkan."
-            skills={["Next.js", "JavaScript", "React", "TypeScript"]}
+            description="Saya sedang belajar web design dan tertarik membuat tampilan website yang menarik dan mudah digunakan. Walaupun masih pemula, saya aktif mencoba berbagai project untuk meningkatkan skill, terutama di bagian tampilan (frontend) dan desain layout."
+            skills={["Next.js", "JavaScript", "CSS", "HTML", "Pyhton"]}
           />
         </div>
       </section>
