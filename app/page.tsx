@@ -49,34 +49,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Meet The Team Section */}
-      <section className="w-full max-w-6xl mx-auto py-20 border-t border-slate-100 dark:border-slate-800">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Kenali Tim Kami</h2>
-          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
-            Dua keahlian yang berbeda, satu visi yang bersatu. Temukan pikiran di balik kode.
-          </p>
-        </div>
-
-        <div className="flex flex-col md:flex-row gap-8 max-w-4xl mx-auto">
-          <TeamCard
-
-            name="I Gusti Krysna DevaNanda"
-            role="UI/UX & Desain"
-            image="/foto%20krysna.jpeg"
-            description="Masih belajar merancang tampilan yang nyaman dipakai. Suka ngulik desain dan mencoba membuat sesuatu yang enak dilihat, meskipun masih banyak yang perlu dipelajari."
-            skills={["Figma", "Tailwind CSS", "HTML/CSS", "Canva"]}
-          />
-          <TeamCard
-            name="Gede Krisna Chita Dharma Wacika"
-            role="Web Design"
-            image="/foto%20dekrisna.jpeg"
-            description="Saya sedang belajar web design dan tertarik membuat tampilan website yang menarik dan mudah digunakan. Walaupun masih pemula, saya aktif mencoba berbagai project untuk meningkatkan skill, terutama di bagian tampilan (frontend) dan desain layout."
-            skills={["Next.js", "JavaScript", "CSS", "HTML", "Pyhton"]}
-          />
-        </div>
-      </section>
     </div>
   );
 }
