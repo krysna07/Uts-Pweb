@@ -16,9 +16,6 @@ export default function Projects() {
                         project.description.toLowerCase().includes(searchTerm.toLowerCase());
     const categoryMap: Record<string, string> = {
       "semua": "all",
-      "lingkungan": "environment",
-      "bisnis": "business",
-      "web": "web",
     };
     const matchCategory = category === "semua" || project.category === categoryMap[category];
     return matchSearch && matchCategory;
