@@ -7,11 +7,21 @@ import { Search } from "lucide-react";
 
 export default function Projects() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [category, setCategory] = useState("semua");
+
+  const categories = ["semua", "lingkungan", "bisnis", "web"];
 
   const filteredProjects = projectsData.filter((project) => {
     const matchSearch = project.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                         project.description.toLowerCase().includes(searchTerm.toLowerCase());
-    return matchSearch;
+    const categoryMap: Record<string, string> = {
+      "semua": "all",
+      "lingkungan": "environment",
+      "bisnis": "business",
+      "web": "web",
+    };
+    const matchCategory = category === "semua" || project.category === categoryMap[category];
+    return matchSearch && matchCategory;
   });
 
   return (
@@ -21,13 +31,29 @@ export default function Projects() {
           Proyek Kami
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-          Jelajahi solusi digital yang telah kami bangun dan cari proyek yang ingin kamu lihat.
+          Jelajahi solusi digital yang telah kami bangun. Filter berdasarkan kategori atau cari yang spesifik.
         </p>
       </div>
 
-      {/* Search */}
-      <div className="flex justify-center mb-12">
-        <div className="relative w-full max-w-md">
+      {/* Filters & Search */}
+      <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
+        <div className="flex flex-wrap justify-center gap-2">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setCategory(cat)}
+              className={`px-5 py-2 rounded-full text-sm font-semibold capitalize transition duration-300 ${
+                category === cat
+                  ? "bg-blue-600 text-white shadow-md"
+                  : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700"
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        <div className="relative w-full md:max-w-xs">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <Search size={18} className="text-slate-400" />
           </div>

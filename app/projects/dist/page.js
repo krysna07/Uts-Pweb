@@ -13,7 +13,10 @@ function Projects() {
         var matchSearch = project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
             project.description.toLowerCase().includes(searchTerm.toLowerCase());
         var categoryMap = {
-            "semua": "all"
+            "semua": "all",
+            "lingkungan": "environment",
+            "bisnis": "business",
+            "web": "web"
         };
         var matchCategory = category === "semua" || project.category === categoryMap[category];
         return matchSearch && matchCategory;
