@@ -1,54 +1,56 @@
 import Link from "next/link";
-import TeamCard from "@/components/TeamCard";
 import { Layers, Zap } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center px-4 sm:px-6 lg:px-8">
-      {/* Hero Section */}
-      <section className="w-full max-w-6xl mx-auto pt-32 pb-24 text-center">
-        <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-8">
-          Kami Adalah
-          K & D <span className="inline-block"></span>
-        </h1>
-        <p className="text-xl text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Dua mahasiswa yang baru mulai belajar coding dan desain web. Kami masih banyak belajar,
-          tapi semangat untuk terus berkembang dan mencoba hal-hal baru selalu ada.
+      
+      <section className="w-full max-w-6xl mx-auto pt-32 pb-32 text-center relative">
+  
+  {/* Background Blur Effect */}
+  <div className="absolute inset-0 -z-10 flex justify-center">
+    <div className="w-[500px] h-[500px] bg-blue-500/20 blur-[120px] rounded-full"></div>
+  </div>
+
+  <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+    Kami Adalah{" "}
+    <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+      K & D
+    </span>
+  </h1>
+
+  <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+    Kami dua mahasiswa yang lagi belajar bikin website. Masih banyak yang belum kami kuasai,
+    tapi kami terus mencoba dan berkembang dari setiap project yang kami buat.
+  </p>
+
+  <div className="flex justify-center gap-4 flex-wrap">
+    <Link
+      href="/projects"
+      className="px-8 py-4 bg-blue-600 text-white rounded-full hover:bg-blue-700 hover:scale-105 transition shadow-lg"
+    >
+      Lihat Project
+    </Link>
+  </div>
+</section>
+
+      {/* CTA Section */}
+ <section className="w-full max-w-6xl mx-auto py-20 text-center">
+    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
+      Mau kenal kami lebih jauh?
+   </h2>
+        <p className="text-slate-600 dark:text-slate-400 mb-8">
+          Cek halaman tentang kami untuk lihat siapa yang ada di balik project ini.
         </p>
+
         <Link
-          href="/projects"
-          className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all duration-300 bg-blue-600 rounded-full shadow-lg hover:shadow-blue-500/30 hover:bg-blue-700 hover:-translate-y-1 dark:bg-blue-500 dark:hover:bg-blue-600"
+          href="/about"
+          className="inline-block px-8 py-4 bg-blue-600 text-white rounded-full hover:bg-blue-700 hover:scale-105 transition"
         >
-          Jelajahi Karya Kami
+          Tentang Kami
         </Link>
       </section>
 
-      {/* Why This Website Section */}
-      <section className="w-full max-w-6xl mx-auto py-20 border-t border-slate-100 dark:border-slate-800">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Mengapa Website Ini?</h2>
-            <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-6">
-              Website ini adalah proyek belajar kami bersama. Dibuat dari nol sebagai tugas kuliah, sekaligus jadi tempat kami mencoba Next.js, TypeScript, dan Tailwind CSS untuk pertama kalinya secara serius.
-            </p>
-            <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-              Masih jauh dari sempurna, tapi setiap baris kode di sini adalah hasil kerja keras dan proses belajar yang nyata.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-2xl border border-slate-100 dark:border-slate-800">
-              <Zap className="text-blue-500 mb-4" size={32} />
-              <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">Berperforma Tinggi</h3>
-              <p className="text-slate-600 dark:text-slate-400 text-sm">Waktu muat dioptimalkan dan perutean mulus menggunakan Next.js App Router.</p>
-            </div>
-            <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-2xl border border-slate-100 dark:border-slate-800">
-              <Layers className="text-blue-500 mb-4" size={32} />
-              <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">Skalabel</h3>
-              <p className="text-slate-600 dark:text-slate-400 text-sm">Dibangun dengan arsitektur berbasis komponen untuk iterasi yang cepat.</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
