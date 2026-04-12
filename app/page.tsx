@@ -9,11 +9,11 @@ export default function Home() {
         
         {/* Background Blur */}
         <div className="absolute inset-0 -z-10 flex justify-center">
-          <div className="w-[500px] h-[500px] bg-blue-500/20 blur-[120px] rounded-full" />
+          <div className="w-[500px] h-[500px] bg-blue-500/10 dark:bg-blue-500/5 blur-[120px] rounded-full" />
         </div>
 
         {/* Title */}
-        <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-6 leading-tight drop-shadow-sm">
           Kami Adalah{" "}
           <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
             K & D
@@ -21,7 +21,7 @@ export default function Home() {
         </h1>
 
         {/* Description */}
-        <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
           Kami dua mahasiswa yang lagi belajar bikin website. Masih banyak yang belum kami kuasai,
           tapi kami terus mencoba dan berkembang dari setiap project yang kami buat.
         </p>
@@ -37,7 +37,7 @@ export default function Home() {
 
           <a
             href="#contact"
-            className="px-8 py-4 border border-slate-500 text-slate-300 rounded-full transition hover:bg-slate-800 hover:scale-105"
+            className="px-8 py-4 border border-slate-500 text-slate-700 dark:text-slate-300 rounded-full transition hover:bg-slate-200 dark:hover:bg-slate-800 hover:scale-105"
           >
             Hubungi Kami
           </a>
