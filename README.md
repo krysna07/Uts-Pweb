@@ -2,7 +2,7 @@
 
 Website portofolio untuk dua mahasiswa yang belajar tentang web development dan desain. Kami masih dalam tahap pembelajaran, namun memiliki semangat untuk terus berkembang dan mencoba hal-hal baru.
 
-## 📋 Daftar Isi
+## Daftar Isi
 
 - [Tentang Proyek](#tentang-proyek)
 - [Fitur](#fitur)
@@ -13,7 +13,7 @@ Website portofolio untuk dua mahasiswa yang belajar tentang web development dan 
 - [Struktur Proyek](#struktur-proyek)
 - [Build & Deploy](#build--deploy)
 
-## 📖 Tentang Proyek
+## Tentang Proyek
 
 Proyek ini adalah website portofolio kolaboratif yang menampilkan:
 
@@ -25,7 +25,7 @@ Proyek ini adalah website portofolio kolaboratif yang menampilkan:
 
 Website ini dibuat untuk memperkenalkan diri, membangun personal branding, dan menunjukkan progress pembelajaran kami dalam web development.
 
-## ✨ Fitur
+##  Fitur
 
 - ✅ Desain responsive (mobile-first)
 - ✅ Dark mode & light mode toggle
@@ -35,7 +35,7 @@ Website ini dibuat untuk memperkenalkan diri, membangun personal branding, dan m
 - ✅ Performance optimization
 - ✅ Built dengan React 19 dan Next.js 16
 
-## 🛠️ Teknologi
+##  Teknologi
 
 **Frontend:**
 - [Next.js 16](https://nextjs.org/) - React framework
@@ -49,7 +49,7 @@ Website ini dibuat untuk memperkenalkan diri, membangun personal branding, dan m
 - [ESLint](https://eslint.org/) - Code linting
 - [PostCSS](https://postcss.org/) - CSS processing
 
-## 📦 Prasyarat
+##  Prasyarat
 
 Sebelum menjalankan proyek ini, pastikan Anda sudah install:
 
@@ -62,7 +62,7 @@ node --version
 npm --version
 ```
 
-## 🚀 Instalasi
+##  Instalasi
 
 ### 1. Clone Repository
 
@@ -95,7 +95,7 @@ pnpm install
 bun install
 ```
 
-## 💻 Menjalankan Secara Lokal
+## Menjalankan Secara Lokal
 
 ### Development Server
 
@@ -136,7 +136,7 @@ Untuk mengecek code quality:
 npm run lint
 ```
 
-## 📁 Struktur Proyek
+##  Struktur Proyek
 
 ```
 Uts-Pweb/
@@ -172,7 +172,7 @@ Uts-Pweb/
 └── README.md               # Project documentation
 ```
 
-## 🔧 Konfigurasi
+##  Konfigurasi
 
 ### Environment Variables (Opsional)
 
@@ -183,7 +183,7 @@ Jika ada kebutuhan untuk environment variables, buat file `.env.local`:
 # Tambahkan variabel sesuai kebutuhan
 ```
 
-## 📝 Tips Pengembangan
+##  Tips Pengembangan
 
 - **Hot Reload**: Perubahan file otomatis ter-reload di browser
 - **TypeScript**: Kami menggunakan TypeScript untuk type safety
@@ -191,7 +191,7 @@ Jika ada kebutuhan untuk environment variables, buat file `.env.local`:
 - **Components**: Buat reusable components di folder `components/`
 - **Data**: Kelola data proyek di `data/projects.json`
 
-## 🚢 Build & Deploy
+##  Build & Deploy
 
 ### Deploy ke Vercel (Recommended)
 
@@ -208,16 +208,16 @@ Website ini bisa di-deploy ke:
 - [GitHub Pages](https://pages.github.com/)
 - Server Linux dengan Node.js
 
-## 📞 Kontribusi & Support
+##  Kontribusi & Support
 
 Jika ada pertanyaan atau saran, silakan:
 - Buka [Issues](../../issues)
 - Buat Pull Request untuk kontribusi
 
-## 📄 Lisensi
+##  Lisensi
 
 Proyek ini dibuat untuk pembelajaran. Silakan gunakan sebagai referensi.
 
 ---
 
-**Dibuat dengan ❤️ oleh Krysna & Dekrisna**
+**Dibuat dengan  oleh Krysna & Dekrisna**
