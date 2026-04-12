@@ -1,36 +1,223 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kami Adalah K & D - Portfolio Website
 
-## Getting Started
+Website portofolio untuk dua mahasiswa yang belajar tentang web development dan desain. Kami masih dalam tahap pembelajaran, namun memiliki semangat untuk terus berkembang dan mencoba hal-hal baru.
 
-First, run the development server:
+## 📋 Daftar Isi
+
+- [Tentang Proyek](#tentang-proyek)
+- [Fitur](#fitur)
+- [Teknologi](#teknologi)
+- [Prasyarat](#prasyarat)
+- [Instalasi](#instalasi)
+- [Menjalankan Secara Lokal](#menjalankan-secara-lokal)
+- [Struktur Proyek](#struktur-proyek)
+- [Build & Deploy](#build--deploy)
+
+## 📖 Tentang Proyek
+
+Proyek ini adalah website portofolio kolaboratif yang menampilkan:
+
+- **Landing Page** - Pengenalan diri dan visi kami
+- **Galeri Proyek** - Showcase karya-karya web dan desain
+- **Halaman About** - Informasi lebih detail tentang tim
+- **Halaman Contact** - Informasi kontak untuk kolaborasi
+- **Dark Mode** - Support untuk dark/light theme
+
+Website ini dibuat untuk memperkenalkan diri, membangun personal branding, dan menunjukkan progress pembelajaran kami dalam web development.
+
+## ✨ Fitur
+
+- ✅ Desain responsive (mobile-first)
+- ✅ Dark mode & light mode toggle
+- ✅ Galeri proyek interaktif dengan preview
+- ✅ Struktur halaman terorganisir (home, about, projects, contact)
+- ✅ SEO-friendly
+- ✅ Performance optimization
+- ✅ Built dengan React 19 dan Next.js 16
+
+## 🛠️ Teknologi
+
+**Frontend:**
+- [Next.js 16](https://nextjs.org/) - React framework
+- [React 19](https://react.dev/) - UI library
+- [Tailwind CSS 4](https://tailwindcss.com/) - Styling
+- [next-themes](https://github.com/pacocoursey/next-themes) - Theme management
+- [Lucide React](https://lucide.dev/) - Icon library
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+
+**Tools:**
+- [ESLint](https://eslint.org/) - Code linting
+- [PostCSS](https://postcss.org/) - CSS processing
+
+## 📦 Prasyarat
+
+Sebelum menjalankan proyek ini, pastikan Anda sudah install:
+
+- **Node.js** v18 atau lebih baru ([Download](https://nodejs.org/))
+- **npm**, **yarn**, **pnpm**, atau **bun** (npm biasanya sudah termasuk dengan Node.js)
+
+Cek versi Node.js:
+```bash
+node --version
+npm --version
+```
+
+## 🚀 Instalasi
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/username/Uts-Pweb.git
+cd Uts-Pweb
+```
+
+### 2. Install Dependencies
+
+Pilih salah satu package manager yang Anda gunakan:
+
+**Menggunakan npm:**
+```bash
+npm install
+```
+
+**Menggunakan yarn:**
+```bash
+yarn install
+```
+
+**Menggunakan pnpm:**
+```bash
+pnpm install
+```
+
+**Menggunakan bun:**
+```bash
+bun install
+```
+
+## 💻 Menjalankan Secara Lokal
+
+### Development Server
+
+Jalankan development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Output akan menunjukkan URL server, biasanya:
+```
+> Local:        http://localhost:3000
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Buka browser Anda dan navigasi ke [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Halaman akan auto-update saat Anda edit file (hot reload).
 
-## Learn More
+### Production Build
 
-To learn more about Next.js, take a look at the following resources:
+Untuk membuat production build:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Kemudian jalankan production server:
 
-## Deploy on Vercel
+```bash
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Linting
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Untuk mengecek code quality:
+
+```bash
+npm run lint
+```
+
+## 📁 Struktur Proyek
+
+```
+Uts-Pweb/
+├── app/                      # Next.js App Router
+│   ├── page.tsx             # Landing page
+│   ├── layout.tsx           # Root layout
+│   ├── globals.css          # Global styles
+│   ├── about/
+│   │   └── page.tsx         # About page
+│   ├── contact/
+│   │   └── page.tsx         # Contact page
+│   ├── projects/
+│   │   ├── page.tsx         # Projects gallery
+│   │   └── [slug]/
+│   │       └── page.tsx     # Project detail page
+│   ├── error.tsx            # Error handling
+│   └── loading.tsx          # Loading component
+├── components/              # Reusable React components
+│   ├── Navbar.tsx          # Navigation bar
+│   ├── Footer.tsx          # Footer component
+│   ├── DarkModeToggle.tsx   # Theme toggle
+│   ├── ThemeProvider.tsx    # Theme provider
+│   ├── ProjectCard.tsx      # Project card component
+│   ├── ProjectPreview.tsx   # Project preview
+│   └── TeamCard.tsx         # Team member card
+├── data/                    # Static data
+│   └── projects.json       # Projects data
+├── public/                  # Static assets
+├── package.json            # Dependencies & scripts
+├── tsconfig.json           # TypeScript config
+├── next.config.ts          # Next.js configuration
+├── tailwind.config.ts      # Tailwind CSS config
+└── README.md               # Project documentation
+```
+
+## 🔧 Konfigurasi
+
+### Environment Variables (Opsional)
+
+Jika ada kebutuhan untuk environment variables, buat file `.env.local`:
+
+```bash
+# .env.local
+# Tambahkan variabel sesuai kebutuhan
+```
+
+## 📝 Tips Pengembangan
+
+- **Hot Reload**: Perubahan file otomatis ter-reload di browser
+- **TypeScript**: Kami menggunakan TypeScript untuk type safety
+- **Tailwind CSS**: Gunakan class utilities untuk styling
+- **Components**: Buat reusable components di folder `components/`
+- **Data**: Kelola data proyek di `data/projects.json`
+
+## 🚢 Build & Deploy
+
+### Deploy ke Vercel (Recommended)
+
+1. Push code ke GitHub
+2. Buka [Vercel](https://vercel.com)
+3. Klik "New Project" dan import repository
+4. Vercel akan auto-detect Next.js config
+5. Klik "Deploy"
+
+### Deploy ke Platform Lain
+
+Website ini bisa di-deploy ke:
+- [Netlify](https://netlify.com)
+- [GitHub Pages](https://pages.github.com/)
+- Server Linux dengan Node.js
+
+## 📞 Kontribusi & Support
+
+Jika ada pertanyaan atau saran, silakan:
+- Buka [Issues](../../issues)
+- Buat Pull Request untuk kontribusi
+
+## 📄 Lisensi
+
+Proyek ini dibuat untuk pembelajaran. Silakan gunakan sebagai referensi.
+
+---
+
+**Dibuat dengan ❤️ oleh Krysna & Dekrisna**
